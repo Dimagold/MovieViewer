@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Movie Viewer</string>
+    <string name="close_app_dialog_message">Application will be closed, are you shure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_movieitem_detail">Movie Details</string>
+    <string name="movieDetailName">Movie Name</string>
+    <string name="movieDetailReleaseDate">Date</string>
+    <string name="movieDetailRaiting">Raiting</string>
+    <string name="movieDetailGeners">Geners</string>
+    <string name="movieDetailDurtion">Duration</string>
+</resources>
