@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_gravity="center"
+    tools:context=".MovieMainActivity">
+    
+    <android.support.v4.widget.SwipeRefreshLayout  
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+        <GridView
+        android:id="@+id/gridViewMovies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="150dp"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="0dp"
+        android:stretchMode="columnWidth">
+
+		</GridView>
+        
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout><!-- From: file:/C:/Users/Dima/AndroidStudioProjects/MovieViewer/app/src/main/res/layout/fragment_grid.xml -->

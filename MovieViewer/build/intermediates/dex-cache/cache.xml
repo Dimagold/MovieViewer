@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\libs\httpclient-4.5.2.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="733db77aa8d9b2d68015189df76ab06304406e50">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\httpclient-4.5.2-42db52cfe130ad6ffef432b452b00fc62e78c03b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\libs\httpclient-cache-4.5.2.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="bd50ea83908dbf2f387a333216e66d2f0c5079bd">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\httpclient-cache-4.5.2-1ee0560592fa87102a12d38c2bff3fde15b00bb8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\classes-a6a16adb4be7750fe21d606f0d1ad9829669c897.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\gson-2.3.1-0c0e67f5c4ef6e1922158d26082455288bc63a8d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\libs\httpmime-4.5.2.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="22b4c53dd9b6761024258de8f9240c3dce6ea368">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\httpmime-4.5.2-d499ea8f4cb24a8d912b7e1a242bb6f48ff8f476.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\classes-42cbdf875ec64fdd2cb6e36c1568fa7e61241293.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\libs\fluent-hc-4.5.2.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="7bfdfa49de6d720ad3c8cedb6a5238eec564dfed">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\fluent-hc-4.5.2-2fe47d32cdc945bc2a4859398ae152a879e65a30.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\libs\commons-logging-1.2.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="4bfc12adfe4842bf07b657f0369c4cb522955686">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\commons-logging-1.2-b2177f34ef9070d6d0bf89ff1fc3d8e5ab24c953.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\libs\picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-3ecda09146cb9a6a12b9ae9e729784563158e401.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\libs\commons-codec-1.9.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="9ce04e34240f674bc72680f8b843b1457383161a">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\commons-codec-1.9-02714f50033dac44ac511fb2fc9af25ea5def968.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\classes-e5b9897dc2524d7938791ca61344f8c0b7d7d2ad.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\classes-e3664ae5ee4213f379193f011f844026ad3ab8c2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\classes-9342c1eb8247868d2d5bd15b1b46cab96c3b5f15.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\libs\httpcore-4.4.4.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="b31526a230871fbe285fbcbe2813f9c0839ae9b0">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\httpcore-4.4.4-bf008660ac1937f2848f133a3986dd432bea0878.jar" />
+    </item>
+    <item
+        jar="C:\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.0-fc0a8fb94e84509a2c71e2141f55807ebc4019c4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\classes-b2d7c52099ceea849ac8a890302ae8c06f28a63f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\libs\httpclient-win-4.5.2.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="80635f3fdebcb3687ca3246214e597916504b996">
+        <dex dex="C:\Users\Dima\AndroidStudioProjects\MovieViewer\app\build\intermediates\pre-dexed\debug\httpclient-win-4.5.2-4bdd5835cde2b8a4f281c4f5b78ed2c60bec7331.jar" />
+    </item>
+
+</items>
