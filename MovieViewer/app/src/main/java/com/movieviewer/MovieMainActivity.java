@@ -1,12 +1,15 @@
 package com.movieviewer;
 
 import java.net.InetAddress;
+import java.util.List;
 
+import com.movieviewer.bll.data.db.DBStorageUtil;
 import com.movieviewer.bll.network.RESTLoader.HTTPVerb;
 import com.movieviewer.bll.network.RESTLoader.RESTResponce;
 import com.movieviewer.bll.network.request.GetPopularMoviesRequest;
 import com.movieviewer.bll.network.request.RequestLanguage;
 import com.movieviewer.bll.network.responce.GetPopularMoviesResponce;
+import com.movieviewer.bll.network.responce.dto.MovieMetaData;
 
 import android.content.Context;
 import android.content.Intent;
@@ -44,10 +47,10 @@ public class MovieMainActivity extends BaseActivity implements
 			mTwoPane = false;
 		}
 		
-		MovieViewer.isOnline = isOnline();
-		if(!MovieViewer.isOnline) {
-			MovieViewer.loadInternalDataToRuntimeDataHolder();
-		}
+		//MovieViewer.isOnline = isOnline();
+		//if(!MovieViewer.isOnline) {
+		//	MovieViewer.loadInternalDataToRuntimeDataHolder();
+		//}
 		
 		MovieViewer.runtimeDataHolder.reset();
 		loadPopularMoviesData();
@@ -67,8 +70,8 @@ public class MovieMainActivity extends BaseActivity implements
 			getLoaderManager().initLoader(LOADER_GET_POPULAR_MOVIES,
 					bundleForLoader(new GetPopularMoviesRequest(RequestLanguage.ENG, nextPage), true, HTTPVerb.GET), this);
 		} else {	
-			GetPopularMoviesResponce obj = MovieViewer.runtimeDataHolder.getPopularMovies().get(nextPage);
-			if(obj != null) movieMainFragment.addPageData(obj.getResults());
+			List<MovieMetaData> page = DBStorageUtil.retrivePage(this, nextPage);
+			if(page != null) movieMainFragment.addPageData(page);
 		}
 	}
 
@@ -109,7 +112,7 @@ public class MovieMainActivity extends BaseActivity implements
 	@Override
 	protected void onPause() {
 		super.onStop();
-		MovieViewer.saveRantimeDataToInternalStorage();
+		//MovieViewer.saveRantimeDataToInternalStorage();
 	}
 
 	@Override

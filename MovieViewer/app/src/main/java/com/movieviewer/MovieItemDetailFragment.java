@@ -2,16 +2,22 @@ package com.movieviewer;
 
 import android.os.Bundle;
 import android.app.Fragment;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.movieviewer.bll.data.db.DBStorageUtil;
 import com.movieviewer.bll.network.request.BaseRequest;
 import com.movieviewer.bll.network.responce.GetMovieDetailsResponce;
 import com.movieviewer.bll.network.responce.dto.Gener;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
+import com.squareup.picasso.Picasso.LoadedFrom;
 
 /**
  * A fragment representing a single MovieItem detail screen. This fragment is
@@ -62,7 +68,7 @@ public class MovieItemDetailFragment extends Fragment {
 		setDisplayData(displayItem);
 	}
 	
-	public void setDisplayData(GetMovieDetailsResponce data) {
+	public void setDisplayData(final GetMovieDetailsResponce data) {
 		if(data != null) {
 			if(movieDate != null) movieDate.setText(data.getRelease_date());
 			if(movieDescription != null) movieDescription.setText(data.getOverview());
@@ -74,7 +80,27 @@ public class MovieItemDetailFragment extends Fragment {
 				Picasso.with(getActivity())
 					.load(BaseRequest.MOVIE_POSTER_BASE_URL + data.getPoster_path())
 					.placeholder(R.drawable.loading_animation)
-					.into(moviePoster);
+					.into(new Target() {
+						
+						@Override
+						public void onPrepareLoad(Drawable arg0) {
+							// TODO Auto-generated method stub
+							
+						}
+						
+						@Override
+						public void onBitmapLoaded(Bitmap arg0, LoadedFrom arg1) {
+							moviePoster.setBackground(new BitmapDrawable(getResources(), arg0));
+							data.setOfflinePoster(arg0);
+							DBStorageUtil.insertMovieDetail(getActivity(), data);
+						}
+						
+						@Override
+						public void onBitmapFailed(Drawable arg0) {
+							// TODO Auto-generated method stub
+							
+						}
+					});
 			}
 		}
 	}

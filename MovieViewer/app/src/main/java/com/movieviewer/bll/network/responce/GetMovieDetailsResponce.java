@@ -2,6 +2,8 @@ package com.movieviewer.bll.network.responce;
 
 import java.util.List;
 
+import android.graphics.Bitmap;
+
 import com.google.gson.GsonBuilder;
 import com.movieviewer.bll.network.responce.dto.Gener;
 import com.movieviewer.bll.network.responce.dto.ProductionCompany;
@@ -35,6 +37,8 @@ public class GetMovieDetailsResponce extends BaseResponce<GetMovieDetailsResponc
 	private boolean video;
 	private double vote_average;
 	private double vote_count;
+	
+	private Bitmap offlinePoster;
 	
 	public GetMovieDetailsResponce() {}
 	
@@ -276,6 +280,14 @@ public class GetMovieDetailsResponce extends BaseResponce<GetMovieDetailsResponc
 
 	public void setVote_count(double vote_count) {
 		this.vote_count = vote_count;
+	}
+
+	public Bitmap getOfflinePoster() {
+		return offlinePoster;
+	}
+
+	public void setOfflinePoster(Bitmap offlinePoster) {
+		this.offlinePoster = offlinePoster;
 	}
 
 }

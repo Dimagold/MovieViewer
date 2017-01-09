@@ -1,6 +1,7 @@
 package com.movieviewer.bll.network.responce.dto;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Gener implements Serializable{
@@ -44,5 +45,24 @@ public class Gener implements Serializable{
 			strBuilder.append(g.getName()).append(", ");
 		}
 		return strBuilder.toString();
+	}
+	
+	public static final String toStringObject(List<Gener> geners) {
+		StringBuilder strBuilder = new StringBuilder();
+		for(Gener g : geners) {
+			strBuilder.append(g.getId() + ":" + g.getName()).append(", ");
+		}
+		return strBuilder.toString();
+	}
+	
+	public static final List<Gener> fromStringObject(String string) {
+		List<Gener> geners = new ArrayList<Gener>();
+		String[] genersStrObjects = string.split(",");
+		
+		for(String gener : genersStrObjects) {
+			String[] tmp = gener.split(":");
+			geners.add(new Gener(Integer.parseInt(tmp[0]), tmp[1]));
+		}
+		return geners;
 	}
 }

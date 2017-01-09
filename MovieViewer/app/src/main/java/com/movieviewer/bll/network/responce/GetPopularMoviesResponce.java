@@ -32,6 +32,9 @@ public class GetPopularMoviesResponce extends BaseResponce<GetPopularMoviesRespo
 	@Override
 	public GetPopularMoviesResponce fromJson(String json) {
 		GetPopularMoviesResponce obj = new GsonBuilder().create().fromJson(json, GetPopularMoviesResponce.class);
+		for(MovieMetaData m : obj.getResults()) {
+			m.setPage(obj.getPage());
+		}
 		return obj;
 	}
 	

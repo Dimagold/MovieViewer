@@ -12,13 +12,14 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
 
     <application
         android:name="com.movieviewer.MovieViewer"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" android:permission="android.permission.ACCESS_CHECKIN_PROPERTIES" android:hardwareAccelerated="false" android:hasCode="true">
         <activity
             android:name=".MovieMainActivity"
             android:label="@string/app_name" >
@@ -36,6 +37,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.movieviewer.MovieItemListActivity" />
         </activity>
+        <provider 
+            android:name=".bll.data.MovieViewerProvider"
+         	android:authorities="com.movieviewer.bll.data.MovieViewerProvider"
+   			android:exported="true"
+   			android:grantUriPermissions="true"
+   			android:label="moviewProvider" >
+        </provider>
     </application>
 
 </manifest>

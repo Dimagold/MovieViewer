@@ -2,6 +2,8 @@ package com.movieviewer.bll.network.responce.dto;
 
 import java.io.Serializable;
 
+import android.graphics.Bitmap;
+
 public class MovieMetaData implements Serializable {
 
 	/**
@@ -22,6 +24,9 @@ public class MovieMetaData implements Serializable {
 	private int vote_count = 0;
 	private boolean video = false;
 	private double vote_average = 0.0;
+	
+	private Bitmap offlineBitmap = null;
+	private int page = -1;
 	
 	public MovieMetaData() {}
 	
@@ -186,5 +191,21 @@ public class MovieMetaData implements Serializable {
 	
 	public void setVote_average(double vote_average) {
 		this.vote_average = vote_average;
+	}
+
+	public Bitmap getOfflineBitmap() {
+		return offlineBitmap;
+	}
+
+	public void setOfflineBitmap(Bitmap offlineBitmap) {
+		this.offlineBitmap = offlineBitmap;
+	}
+
+	public int getPage() {
+		return page;
+	}
+
+	public void setPage(int page) {
+		this.page = page;
 	}
 }

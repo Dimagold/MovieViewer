@@ -1,5 +1,6 @@
 package com.movieviewer;
 
+import com.movieviewer.bll.data.db.DBStorageUtil;
 import com.movieviewer.bll.network.RESTLoader.HTTPVerb;
 import com.movieviewer.bll.network.RESTLoader.RESTResponce;
 import com.movieviewer.bll.network.request.GetMovieDetailsRequest;
@@ -52,8 +53,7 @@ public class MovieItemDetailActivity extends BaseActivity {
 			getLoaderManager().initLoader(LOADER_GET_MOVIE_DETAIL,
 				bundleForLoader(new GetMovieDetailsRequest(RequestLanguage.ENG, movieId), true, HTTPVerb.GET), this);
 		} else {
-			movieItemDetailFragment.setDisplayData(
-					MovieViewer.runtimeDataHolder.getMoviesDetails().get(movieId));
+			movieItemDetailFragment.setDisplayData(DBStorageUtil.retriveMovieDetails(this, movieId));
 		}
 	}
 	
@@ -71,7 +71,7 @@ public class MovieItemDetailActivity extends BaseActivity {
 	protected void onPause() {
 		super.onStop();
 		//getIntent().putExtra(MovieItemDetailFragment.ARG_ITEM_ID, movieId);
-		MovieViewer.saveRantimeDataToInternalStorage();
+		//MovieViewer.saveRantimeDataToInternalStorage();
 	}
 	
 	@Override
